@@ -1,0 +1,13 @@
+<h2>{{location}}</h2>
+<p>Today will be {{generalCondition}}, with daylight {{daylightHours}}</p>
+
+{{#forecast.length}}
+<h3>Weekly Forecast</h3>
+<ul>
+  {{#forecast}}
+  <li>
+      <p>{{day}} {{date}}, {{text}}</p>
+  </li>
+  {{/forecast}}
+</ul>
+{{/forecast.length}}

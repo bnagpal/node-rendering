@@ -1,0 +1,25 @@
+{
+  "name": "progressive-prototype",
+  "version": "1.0.0",
+  "description": "prototype of using nodeJS on the server to render client-side templates",
+  "main": "server.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "author": "Daniel Pavitt",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "mustache-express": "^1.2.2",
+    "promise": "^7.1.1",
+    "request": "^2.74.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "sinon": "^1.17.5",
+    "supertest": "^2.0.0"
+  }
+}

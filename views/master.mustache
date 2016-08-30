@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+  </head>
+  <body>
+
+    <!-- FORM POSTING LOCATION TO ROUTE -->
+    <h1>What is the weather like in?</h1>
+    <form action="/weather/forecast" method="POST">
+        <input name="location" type="text" />
+        <input type="submit" />
+    </form>
+
+    <!-- FORECAST INCLUDED IF RETURNED IN RESPONSE -->
+    {{#weather}}
+        {{>weather}}
+    {{/weather}}
+  </body>
+</html>
