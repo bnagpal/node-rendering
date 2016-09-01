@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+
+    <div id="date">
+    <p style="text-align:left;">
+      {{#time}}
+      {{currdatetime}}
+      {{/time}}
+
+    <span style="float:right;">   <b> Welcome </b> </p>
+  </div>
+
+
+    <!-- FORM POSTING LOCATION TO ROUTE -->
+    <h1>What Tv series you are looking for</h1>
+    <form action="/tvSeries/tvSeriesDetails" method="POST">
+        <input name="seriesName" type="text" />
+        <input type="submit" />
+    </form>
+    <br><hr>
+    <!-- FORECAST INCLUDED IF RETURNED IN RESPONSE -->
+    {{#tvSeriesDetails}}
+    <h2>Series Name : {{name}} </h2>
+    <hr>
+    {{{summary}}}
+    <img src= {{image}}>
+    {{/tvSeriesDetails}}
+
+  </body>
+</html>
